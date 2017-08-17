@@ -1,0 +1,193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000013537955812}
+  m_IsPrefabParent: 1
+--- !u!1 &1000013537955812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000013951957890}
+  - 114: {fileID: 114000010677008112}
+  - 114: {fileID: 114000012356202086}
+  - 114: {fileID: 114000011145593348}
+  - 114: {fileID: 114000012713772722}
+  - 114: {fileID: 114000013155897518}
+  - 114: {fileID: 114000011912365052}
+  - 114: {fileID: 114000013348952920}
+  - 114: {fileID: 114000012235167866}
+  m_Layer: 0
+  m_Name: CCShader SpatialMapping
+  m_TagString: Spatial Mapping
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000013951957890
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013537955812}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114000010677008112
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013537955812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a98b181acba5549af3d852c7664623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TrianglesPerCubicMeter: 2000
+  Extents: {x: 10, y: 10, z: 10}
+  TimeBetweenUpdates: 1
+  RecalculateNormals: 1
+--- !u!114 &114000011145593348
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013537955812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c1fd2ccb6e3e5449429462b44a8229, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TransparentMaterial: {fileID: 2100000, guid: 7b936a5e3e6c1ff43bb9f44d6b618521, type: 2}
+  PreviousMaterial: {fileID: 2100000, guid: 6c8e69ce0766b0248870f9fde85bc20a, type: 2}
+--- !u!114 &114000011912365052
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013537955812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7aff72e2b81a1a4183d67105c7e844f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomModel: {fileID: 0}
+--- !u!114 &114000012235167866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013537955812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4077c41b4858904d8088a87ef45baed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BoundsExpansion: 0
+--- !u!114 &114000012356202086
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013537955812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d587b71ba3b55e44f9654cec8898c32f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PhysicsLayer: 31
+  surfaceMaterial: {fileID: 2100000, guid: 7b936a5e3e6c1ff43bb9f44d6b618521, type: 2}
+  drawVisualMeshes: 1
+  castShadows: 0
+--- !u!114 &114000012713772722
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013537955812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d1a2a33ffcac354298137001635a001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxGazeDistance: 15
+  RaycastLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967291
+  PosRay: {x: 0, y: 0, z: 0}
+  NormRay: {x: 0, y: 0, z: 0}
+  SetStabilizationPlane: 1
+  LerpStabilizationPlanePowerCloser: 4
+  LerpStabilizationPlanePowerFarther: 7
+--- !u!114 &114000013155897518
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013537955812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cef26a362f41c5248aca879be2a5f04b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114000013348952920
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013537955812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97baae0b74f54745acaecfa584e7f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Plane: {fileID: 0}
+  TransparentMaterial: {fileID: 2100000, guid: 7b936a5e3e6c1ff43bb9f44d6b618521, type: 2}
+  RedToBlueMaterial: {fileID: 2100000, guid: 6c8e69ce0766b0248870f9fde85bc20a, type: 2}
+  BlueToRedMaterial: {fileID: 2100000, guid: 0a6c8647d0ea2094b88bc3ccade493da, type: 2}
+  RedToBlueBrightMaterial: {fileID: 2100000, guid: efd7b5ce92f61824b9591f64d44725ab,
+    type: 2}
+  BlueToRedBrightMaterial: {fileID: 2100000, guid: 91638bae1e64a544092135efa0201d52,
+    type: 2}
+  OrangeToPurpleMaterial: {fileID: 2100000, guid: a12ede86cdadccd41b51691a875dae7b,
+    type: 2}
+  PurpleToOrangeMaterial: {fileID: 2100000, guid: 694a01229c02a074fa18643cc822d2d4,
+    type: 2}
+  YellowToBlueMaterial: {fileID: 2100000, guid: d8ba874aac5682d4e9df807f9a1780a5,
+    type: 2}
+  BlueToYellowMaterial: {fileID: 2100000, guid: add5b87365fa4d045859c72300d8d85c,
+    type: 2}
+  BlueLuminanceMaterial: {fileID: 2100000, guid: ddc3c5d76375eb94da577d41b6915dbe,
+    type: 2}
+  RedLuminanceMaterial: {fileID: 2100000, guid: 78d14237905c64e44ba4e841e11b5a3e,
+    type: 2}
+  GreenLuminanceMaterial: {fileID: 2100000, guid: 5f70e084e1430294eaee50fd7c5dee12,
+    type: 2}
+  BlueToWhiteMaterial: {fileID: 2100000, guid: a6abdce18117aaa47b88f7f7f7db020b, type: 2}
+  WhiteToBlueMaterial: {fileID: 2100000, guid: c714bcaf4f9256942be46dc132a5f559, type: 2}
+  RedToWhiteMaterial: {fileID: 2100000, guid: 80201eb5238eb834fae6907938a03c7f, type: 2}
+  WhiteToRedMaterial: {fileID: 2100000, guid: e893d87f86f1a7a4483c1725b1731ec2, type: 2}
+  GreenToWhiteMaterial: {fileID: 2100000, guid: 4113bcdf042e6e341ba587349b79bb58,
+    type: 2}
+  WhiteToGreenMaterial: {fileID: 2100000, guid: 2579108488405184fb5ac32ab79fb060,
+    type: 2}
+  WireFrame: {fileID: 2100000, guid: d698790d3facd3d4289a13fa1243030a, type: 2}
+  BlueLuminanceMaterial_Exp1: {fileID: 2100000, guid: 702f9bcff44209741991b1be39d087dd,
+    type: 2}
+  RedToBlueMaterial_Exp1: {fileID: 2100000, guid: c2c7c2907e311064bab34b4558e80828,
+    type: 2}
