@@ -1,5 +1,11 @@
 # HoloLens App for displaying distance-based shaders
 
+Projects using this code should acknowledge:
+
+Using an Augmented Reality Device as a Distance-Based Vision Aid – Promise and Limitations.
+M. Kinateder, J. Gualtieri, M.J. Dunn, W. Jarosz, X. Yang and E.A. Cooper
+Optometry & Vision Science, 95(9), 727-737, 2018
+
 ## Requirements
 This application is based of the MS HoloToolkit and in particular it uses the spatial mapping abilities. Basic familiarity with developing and deploying for MS HoloLens is assumed. 
 
